@@ -1,0 +1,19 @@
+.roundcroissants {
+    display: flex;
+    width: 100%; /* Ширина контейнера на всю ширину окна */
+    height: 50vh; /* Высота контейнера - половина высоты окна */
+    overflow: hidden; /* Обрезаем все, что выходит за пределы контейнера */
+    position: relative;
+    background-color: #F5EDE7;
+    justify-content: center;
+}
+
+.cropped-image {
+    width: 96%; /* Картинка будет растянута по ширине контейнера */
+    height: auto; /* Пропорции сохраняются */
+    object-fit: cover; /* Это обеспечивает, что картинка сохранит пропорции, а обрезка будет происходить при необходимости */
+    position: relative;
+    top: 0;
+    border-radius: 15px;
+    left: 0;
+}

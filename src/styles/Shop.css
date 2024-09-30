@@ -1,0 +1,69 @@
+.shop {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос строк */
+    gap: 30px; /* Отступы между элементами */
+    justify-content: space-evenly; /* Центрируем элементы по горизонтали */
+    padding: 40px 100px; /* Внутренние отступы */
+    background-color: #F5EDE7;
+    margin-bottom: 1px;
+    transition: transform 0.3s ease; /* Добавляем анимацию для плавности */
+}
+
+.shop-container {
+    background-color: #F5EDE7;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+/* Обычные стили для shop-item */
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: start;
+    flex-basis: calc(33.33% - 60px); /* Три элемента в ряд с учетом отступов */
+    max-width: 400px; /* Максимальная ширина для каждой карточки */
+    min-width: 250px; /* Минимальная ширина для карточек */
+    flex-grow: 1; /* Позволяет карточкам равномерно распределяться по ширине */
+    box-sizing: border-box; /* Чтобы отступы учитывались в размерах */
+    transition: transform 0.3s ease; /* Добавляем плавную анимацию при наведении */
+}
+
+/* Когда на элемент наводится курсор */
+.shop-item:hover {
+    transform: scale(1.1); /* Увеличиваем выбранный элемент */
+    z-index: 1; /* Поднимаем элемент над остальными */
+}
+
+/* Остальные элементы в ряду уменьшаются */
+.shop-item:not(:hover) {
+    transform: scale(0.9); /* Уменьшаем неактивные элементы */
+    transition: transform 0.3s ease; /* Добавляем плавную анимацию для уменьшения */
+}
+
+/* Стили для изображения */
+.shop-item img {
+    width: 100%; /* Картинка занимает всю ширину карточки */
+    border-radius: 20px;
+}
+
+.shop-item .item-title {
+    margin: 15px 0; /* Отступы сверху и снизу для заголовка */
+    font-size: 24px;
+}
+
+.shop-item .cost {
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h1 {
+    text-align: center; /* Центрируем заголовок по горизонтали */
+    margin: 0;
+    padding: 50px 0; /* Добавляем вертикальные отступы для заголовка */
+    font-size: 36px; /* Размер шрифта для заголовка */
+    font-weight: normal;
+    color: #000; /* Черный цвет заголовка для акцента */
+}

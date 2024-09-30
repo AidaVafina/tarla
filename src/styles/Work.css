@@ -1,0 +1,66 @@
+.work {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Растягиваем по всей ширине страницы */
+    height: 750px;
+    background-color: #F5EDE7;
+    flex-direction: column; /* Элементы располагаются друг под другом */
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.points {
+    display: flex; /* Элементы располагаются горизонтально в один ряд */
+    justify-content: space-around; /* Центрируем элементы по горизонтали */
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 25px; /* Отступ снизу для заголовка */
+    margin-top: 25px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+p{
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px; /* Ширина каждого элемента */
+    margin: 0 15px; /* Отступы между элементами */
+}
+
+.point-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.point-description {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center; /* Центрирование текста */
+    margin-top: 10px;
+
+    max-width: 250px; /* Ограничиваем ширину текста */
+    line-height: 1.5; /* Увеличиваем высоту строки для удобства чтения */
+    color: #333; /* Можно поменять цвет для лучшей читабельности */
+}
+

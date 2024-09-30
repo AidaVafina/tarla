@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #F5EDE7;
+
+}
+
+.left-element, .right-element {
+    font-size: 16px;
+    color: #000;
+    display: flex;
+}
+
+.left-element {
+    /* align-items: flex-end; /* Выравниваем содержимое по нижнему краю */
+    margin-left: 15px;
+    position: relative; /* Добавляем позиционирование */
+
+}
+
+.right-element {
+    display: flex;
+}
+
+.icon-button {
+    display: flex;
+    flex-direction: column; /* Размещаем иконку сверху, текст снизу */
+    align-items: center;
+    background: none; /* Без фона */
+    border: none; /* Без границы */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-icon {
+    width: 40%; /* Размер иконки */
+    height: auto;
+    cursor: pointer;
+}
+
+.button-text {
+    margin-top: 5px; /* Отступ между иконкой и текстом */
+    font-size: 16px; /* Размер текста */
+    color: #000;
+}
+
+.menu {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Располагаем элементы меню в одну строку */
+    gap: 20px; /* Добавляем промежутки между элементами */
+    margin-left: 15px;
+    padding: 0;
+    align-self: flex-end;
+}
+
+.menu li {
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}

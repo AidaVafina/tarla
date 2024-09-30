@@ -1,0 +1,86 @@
+.footer {
+    background-color: #F5EDE7; /* Цвет фона */
+    padding: 50px 10px; /* Внешние отступы для всего футера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .first {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы друг над другом */
+    align-items: center; /* Центрируем по горизонтали */
+    margin-bottom: 80px; /* Отступ между блоками first и second */
+}
+
+.footer .first h1 {
+    font-size: 72px;
+    font-family: 'Robotj', sans-serif;
+    font-weight: 350;
+    text-align: center;
+}
+
+.footer .first h2 {
+    font-size: 31px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer .second {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы в ряд */
+    width: 100%; /* Растягиваем блок на всю ширину */
+    max-width: 1200px; /* Максимальная ширина футера */
+}
+
+.footer .second > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+}
+
+.footer .second .logo img {
+    width: 130px; /* Размер логотипа */
+    margin-top: 15px;
+}
+
+.footer .second h3 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .second a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer .second .contacts img {
+    width: 100px; /* Размер картинки для контактов */
+    margin-top: 10px;
+}
+
+/* Responsive для мобильных устройств */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 50px;
+    }
+
+    .footer .second {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .second > div {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}

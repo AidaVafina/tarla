@@ -1,0 +1,41 @@
+.carousel-container {
+    width: 100vw; /* Ширина контейнера */
+    overflow: hidden; /* Скрываем выходящие за пределы элементы */
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Анимация бесконечного скролла */
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 400px; /* Задайте ширину элемента */
+    height: 300px;
+    object-fit: cover; /* Изображение будет обрезано, но сохранит пропорции */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Изображение будет обрезано, но сохранит пропорции */
+    border-radius: 10px;
+}
+
+/* Ключевые кадры для бесконечной прокрутки */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Прокручиваем на 50% ширины трека */
+    }
+}
