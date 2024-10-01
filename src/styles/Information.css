@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0; /* Убираем отступы */
-  padding: 0; /* Убираем внутренние отступы */
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -18,16 +18,16 @@ h4 {
 }
 
 input {
-  padding: 10px; /* Уменьшаем padding для input */
+  padding: 10px;
   margin-left: 10px;
-  background-color: rgba(255, 255, 255, 0.25); /* Белый цвет с 25% прозрачностью */
-  border: 1px solid #FFFFFF; /* Белая рамка */
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #FFFFFF;
   color: white;
   border-radius: 10px;
   outline: none;
   font-size: 12px;
   box-sizing: border-box;
-  height: 45px; /* Высота для согласования с кнопкой */
+  height: 45px;
 }
 
 button {

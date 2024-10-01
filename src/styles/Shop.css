@@ -1,12 +1,12 @@
 .shop {
     display: flex;
-    flex-wrap: wrap; /* Разрешаем перенос строк */
-    gap: 30px; /* Отступы между элементами */
-    justify-content: space-evenly; /* Центрируем элементы по горизонтали */
-    padding: 40px 100px; /* Внутренние отступы */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding: 40px 100px;
     background-color: #F5EDE7;
     margin-bottom: 1px;
-    transition: transform 0.3s ease; /* Добавляем анимацию для плавности */
+    transition: transform 0.3s ease;
 }
 
 .shop-container {
@@ -15,41 +15,39 @@
     padding: 10px 10px;
 }
 
-/* Обычные стили для shop-item */
 .shop-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     text-align: start;
-    flex-basis: calc(33.33% - 60px); /* Три элемента в ряд с учетом отступов */
-    max-width: 400px; /* Максимальная ширина для каждой карточки */
-    min-width: 250px; /* Минимальная ширина для карточек */
-    flex-grow: 1; /* Позволяет карточкам равномерно распределяться по ширине */
-    box-sizing: border-box; /* Чтобы отступы учитывались в размерах */
-    transition: transform 0.3s ease; /* Добавляем плавную анимацию при наведении */
+    flex-basis: calc(33.33% - 60px);
+    max-width: 400px;
+    min-width: 250px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
-/* Когда на элемент наводится курсор */
+
 .shop-item:hover {
-    transform: scale(1.1); /* Увеличиваем выбранный элемент */
-    z-index: 1; /* Поднимаем элемент над остальными */
+    transform: scale(1.1);
+    z-index: 1;
 }
 
-/* Остальные элементы в ряду уменьшаются */
+
 .shop-item:not(:hover) {
-    transform: scale(0.9); /* Уменьшаем неактивные элементы */
-    transition: transform 0.3s ease; /* Добавляем плавную анимацию для уменьшения */
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
 }
 
-/* Стили для изображения */
 .shop-item img {
-    width: 100%; /* Картинка занимает всю ширину карточки */
+    width: 100%;
     border-radius: 20px;
 }
 
 .shop-item .item-title {
-    margin: 15px 0; /* Отступы сверху и снизу для заголовка */
+    margin: 15px 0;
     font-size: 24px;
 }
 
@@ -60,10 +58,10 @@
 }
 
 h1 {
-    text-align: center; /* Центрируем заголовок по горизонтали */
+    text-align: center;
     margin: 0;
-    padding: 50px 0; /* Добавляем вертикальные отступы для заголовка */
-    font-size: 36px; /* Размер шрифта для заголовка */
+    padding: 50px 0;
+    font-size: 36px;
     font-weight: normal;
-    color: #000; /* Черный цвет заголовка для акцента */
+    color: #000;
 }

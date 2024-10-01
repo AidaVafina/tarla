@@ -9,8 +9,8 @@ interface ShopItemProps {
 
 const ShopItem: React.FC<ShopItemProps> = ({ image, title, cost }) => {
     const titleWords = title.split(' ');
-    const lastWord = titleWords.pop(); // Последнее слово
-    const firstPart = titleWords.join(' '); // Первая часть заголовка
+    const lastWord = titleWords.pop();
+    const firstPart = titleWords.join(' ');
 
     return (
         <div className="shop-item">

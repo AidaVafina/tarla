@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/HomePage.css';
-import BlackButton from "./elements/BlackButton.tsx"; // Добавляем ссылку на CSS файл
+import BlackButton from "./elements/BlackButton.tsx";
 import croissant from "../assets/croissant.jpg";
 
 const HomePage: React.FC = () => {

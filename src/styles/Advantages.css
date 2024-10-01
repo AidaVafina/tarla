@@ -21,18 +21,17 @@
     box-sizing: border-box;
     text-align: center;
     margin: 20px;
-    transition: transform 0.3s ease; /* Добавляем плавную анимацию */
+    transition: transform 0.3s ease;
 }
 
-/* Увеличиваем элемент при наведении */
+
 .transparent-point:hover {
-    transform: scale(1.1); /* Увеличиваем до 110% */
-    z-index: 1; /* Поднимаем над другими элементами */
+    transform: scale(1.1);
+    z-index: 1;
 }
 
-/* Уменьшаем все остальные карточки при наведении на одну */
 .transparent-point:not(:hover) {
-    transform: scale(0.9); /* Уменьшаем до 90% */
+    transform: scale(0.9);
     transition: transform 0.3s ease;
 }
 

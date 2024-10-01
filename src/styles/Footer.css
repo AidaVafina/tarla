@@ -31,19 +31,19 @@
 
 .footer .second {
     display: flex;
-    justify-content: space-between; /* Размещаем элементы в ряд */
-    width: 100%; /* Растягиваем блок на всю ширину */
-    max-width: 1200px; /* Максимальная ширина футера */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .footer .second > div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравниваем элементы по левому краю */
+    align-items: flex-start;
 }
 
 .footer .second .logo img {
-    width: 130px; /* Размер логотипа */
+    width: 130px;
     margin-top: 15px;
 }
 
@@ -64,11 +64,11 @@
 }
 
 .footer .second .contacts img {
-    width: 100px; /* Размер картинки для контактов */
+    width: 100px;
     margin-top: 10px;
 }
 
-/* Responsive для мобильных устройств */
+
 @media (max-width: 768px) {
     .footer {
         padding: 30px 50px;

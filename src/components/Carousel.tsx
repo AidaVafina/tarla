@@ -17,7 +17,6 @@ const Carousel: React.FC = () => {
         <div className="carousel-container">
             <h1>@tarlabakes</h1>
             <div className="carousel-track">
-                {/* Рендерим картинки трижды для бесконечной прокрутки */}
                 {[...images, ...images, ...images].map((image, index) => (
                     <div className="carousel-item" key={index}>
                         <img src={image} alt={`Carousel image ${index + 1}`} />

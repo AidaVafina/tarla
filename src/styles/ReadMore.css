@@ -1,7 +1,6 @@
-/* Основной контейнер для всего блока "ReadMore" */
 .read-more {
     display: flex;
-    flex-direction: column; /* Размещаем блоки вертикально */
+    flex-direction: column;
     gap: 50px;
     padding: 60px 100px;
     background-color: #F5EDE7;
@@ -34,11 +33,10 @@
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    gap: 20px; /* Отступы между изображением и текстом */
+    gap: 20px;
     align-items: center;
 }
 
-/* Картинка в первой секции (слева) */
 .read-more_first .read1 {
     width: 30%;
     height: auto;
@@ -46,7 +44,6 @@
     object-fit: cover;
 }
 
-/* Картинка во второй секции (справа) */
 .read-more_last .read2 {
     width: 30%;
     margin-top: 30px;
@@ -55,7 +52,6 @@
     object-fit: cover;
 }
 
-/* Стили для текстового контейнера */
 .text-more {
     display: flex;
     flex-direction: column;
@@ -63,7 +59,6 @@
     width: 35%;
 }
 
-/* Стили для заголовков и описаний */
 .title p {
     font-size: 32px;
     font-family: 'DM Sans', sans-serif;
@@ -80,14 +75,12 @@
     line-height: 1.6;
 }
 
-/* Настройка для кнопки */
 .black-button {
     margin-top: 20px;
     width: 250px;
     height: 58px;
 }
 
-/* Для мобильных устройств (адаптивная верстка) */
 @media (max-width: 768px) {
     .read-more_first, .read-more_last {
         flex-direction: column;
@@ -96,11 +89,11 @@
 
     .read-more_first .read1,
     .read-more_last .read2 {
-        width: 100%; /* Картинки занимают всю ширину на мобильных */
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .text-more {
-        width: 100%; /* Текст тоже занимает всю ширину */
+        width: 100%;
     }
 }

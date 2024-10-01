@@ -6,19 +6,19 @@ html, body {
 
 .black-button {
     width: auto;
-    background-color: transparent; /* Прозрачный фон */
-    padding: 10px 20px; /* Внутренние отступы */
-    font-size: 22px; /* Размер текста */
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 22px;
     font-weight: 200;
-    cursor: pointer; /* Изменение курсора при наведении */
-    border-radius: 20px; /* Скругленные углы */
-    transition: background-color 0.1s ease, color 0.1s ease; /* Плавный переход */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.1s ease, color 0.1s ease;
     white-space: nowrap;
     color: #000000;
     border: 1px solid #000000;
 }
 
 .black-button:hover {
-    background-color: #000; /* Черный фон при наведении */
-    color: #FFFFFF; /* Цвет текста при наведении */
+    background-color: #000;
+    color: #FFFFFF;
 }

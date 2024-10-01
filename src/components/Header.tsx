@@ -3,7 +3,7 @@ import '../styles/Header.css';
 import frame from '../assets/Frame.png';
 import icon1 from '../assets/icon1.png';
 import icon2 from '../assets/icon2.png';
-import AuthPopup from './AuthPopup'; // Импортируем попап
+import AuthPopup from './AuthPopup';
 
 const Header: React.FC = () => {
     const [isAuthPopupOpen, setIsAuthPopupOpen] = useState(false); // Состояние для управления попапом

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import '../styles/AuthPopup.css'; // Стили для попапа
+import '../styles/AuthPopup.css';
 
 interface AuthPopupProps {
-    onClose: () => void; // Функция для закрытия попапа
+    onClose: () => void;
 }
 
 const AuthPopup: React.FC<AuthPopupProps> = ({ onClose }) => {
-    const [isLogin, setIsLogin] = useState(true); // Управляем состоянием для переключения между входом и регистрацией
+    const [isLogin, setIsLogin] = useState(true);
 
     // Схемы валидации для входа и регистрации
     const loginValidationSchema = Yup.object().shape({
@@ -26,7 +26,7 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ onClose }) => {
             .min(6, 'Password must be at least 6 characters')
             .required('Password is required'),
         confirmPassword: Yup.string()
-            .oneOf([Yup.ref('password'), undefined], 'Passwords must match') // Заменяем null на undefined
+            .oneOf([Yup.ref('password'), undefined], 'Passwords must match')
             .required('Confirm password is required'),
     });
 
