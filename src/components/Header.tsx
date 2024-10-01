@@ -4,9 +4,11 @@ import frame from '../assets/Frame.png';
 import icon1 from '../assets/icon1.png';
 import icon2 from '../assets/icon2.png';
 import AuthPopup from './AuthPopup';
+import Cart from './Cart';
 
 const Header: React.FC = () => {
-    const [isAuthPopupOpen, setIsAuthPopupOpen] = useState(false); // Состояние для управления попапом
+    const [isAuthPopupOpen, setIsAuthPopupOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
     return (
         <>
@@ -24,7 +26,7 @@ const Header: React.FC = () => {
                         <img src={icon1} alt="Log In Icon" className="button-icon" />
                         <span className="button-text">Log in</span>
                     </button>
-                    <button className="icon-button">
+                    <button className="icon-button" onClick={() => setIsCartOpen(true)}>
                         <img src={icon2} alt="Cart Icon" className="button-icon" />
                         <span className="button-text">Cart</span>
                     </button>
@@ -32,6 +34,7 @@ const Header: React.FC = () => {
             </div>
 
             {isAuthPopupOpen && <AuthPopup onClose={() => setIsAuthPopupOpen(false)} />}
+            {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
         </>
     );
 };

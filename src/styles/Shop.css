@@ -65,3 +65,38 @@ h1 {
     font-weight: normal;
     color: #000;
 }
+
+.add-to-cart-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.remove-from-cart-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: auto;
+}
+
+.remove-from-cart-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
