@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Advantages.css';
+import '../../styles/Advantages.css';
 
 interface AdvantageCardProps {
     image: string;

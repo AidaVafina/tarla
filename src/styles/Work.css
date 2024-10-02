@@ -1,3 +1,4 @@
+/* Базовые стили для секции Work */
 .work {
     display: flex;
     align-items: center;
@@ -12,8 +13,18 @@
 .points {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Добавляем возможность переносить элементы */
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px; /* Ширина каждого элемента */
+    margin: 15px; /* Отступы между элементами */
 }
 
 h1 {
@@ -29,20 +40,11 @@ h1 {
     margin-bottom: 55px;
 }
 
-p{
+p {
     color: black;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 250;
-}
-
-.point {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 250px; /* Ширина каждого элемента */
-    margin: 0 15px; /* Отступы между элементами */
 }
 
 .point-title {
@@ -58,9 +60,62 @@ p{
     font-weight: 300;
     text-align: center;
     margin-top: 10px;
-
     max-width: 250px;
     line-height: 1.5;
     color: #333;
 }
 
+/* Для экранов до 1280px */
+@media (max-width: 1280px) {
+    .work {
+        height: auto;
+    }
+
+    .points {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: 45px;
+    }
+
+    .point {
+        margin: 10px 15px;
+    }
+
+    .point-title {
+        font-size: 20px;
+    }
+
+    .point-description {
+        font-size: 16px;
+        margin-top: 5px;
+        max-width: 150px;
+        line-height: 1.5;
+        color: #333;
+    }
+}
+
+/* Для экранов до 768px (по 2 элемента в строке) */
+@media (max-width: 768px) {
+    .points {
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .point {
+        width: calc(50% - 30px); /* Каждому элементу 50% ширины с учетом отступов */
+        margin-top: 20px;
+        margin-bottom: -30px;
+    }
+}
+
+/* Для экранов до 480px (1 элемент в строке) */
+@media (max-width: 480px) {
+    .point {
+        width: 100%; /* Каждому элементу 100% ширины */
+        margin: 10px 0;
+    }
+}

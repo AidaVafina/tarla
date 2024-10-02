@@ -3,16 +3,11 @@ import '../styles/ReadMore.css';
 import read1 from '../assets/read1.jpg';
 import read2 from '../assets/legend.jpg';
 import BlackButton from "./elements/BlackButton.tsx";
-import star from '../assets/star.png';
 
 const ReadMore: React.FC = () => {
     return (
         <div className="read-more">
-            <div className="star">
-                <img src={star} alt={star}/>
-            </div>
             <div className="read-more_first">
-                <img src={read1} alt={read1} className="read1"/>
                 <div className="text-more">
                     <div className="title">
                         <p>Amazing Ingredients</p>
@@ -21,8 +16,9 @@ const ReadMore: React.FC = () => {
                         <p>We like to keep things simple and authentic. We’ve sourced the very best from the very best,
                             from our Poitou-Charentes butter to our Valrhona chocolate batons.</p>
                     </div>
-                    <BlackButton text="Read more"/>
+                    <BlackButton text="Read more" />
                 </div>
+                <img src={read1} alt="Amazing Ingredients" className="read1" />
             </div>
 
             <div className="read-more_last">
@@ -35,12 +31,9 @@ const ReadMore: React.FC = () => {
                             man
                             who brought joy to the isolated citizens of Girona during an outbreak of the plague.</p>
                     </div>
-                    <BlackButton text="Read more"/>
+                    <BlackButton text="Read more" />
                 </div>
-                <img src={read2} alt={read2} className="read2"/>
-            </div>
-            <div className="star2">
-                <img src={star} alt={star}/>
+                <img src={read2} alt="Legendary Bakes" className="read2" />
             </div>
         </div>
     );

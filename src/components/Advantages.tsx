@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Advantages.css'
-import AdvantageCard from "./AdvantageCard.tsx";
+import AdvantageCard from "./elements/AdvantageCard.tsx";
 import better from "../assets/better.jpg";
 import pack from "../assets/pack.jpg";
 import bake from "../assets/bake.jpg";
